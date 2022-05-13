@@ -1,17 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
-import html2pdf from 'html2pdf.js'
 import Profile from '../../assets/profile.png'
 import Light from '../../assets/light.pdf'
 import Dark from '../../assets/dark.pdf'
 import './homepage.styles.scss'
-
-const opt = {
-  margin: 0,
-  filename: 'Resume.pdf',
-  image: { type: 'jpeg', quality: 0.98 },
-  html2canvas: { scale: 4 },
-  jsPDF: { format: 'a4', orientation: 'portrait' },
-}
 
 const HomePage = () => {
   const [shown, setShown] = useState(false)
@@ -21,20 +12,6 @@ const HomePage = () => {
   const toggleTheme = () => {
     document.body.classList.toggle('dark-theme')
     setIsDark((prev) => !prev)
-  }
-
-  const scaleCV = () => {
-    document.body.classList.add('scale-cv')
-  }
-  const unscaleCV = () => {
-    document.body.classList.remove('scale-cv')
-  }
-
-  const generatePdf = () => {
-    scaleCV()
-    html2pdf(CVRef.current, opt)
-
-    setTimeout(unscaleCV, 5000)
   }
 
   useEffect(() => {
