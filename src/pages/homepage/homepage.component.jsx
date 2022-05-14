@@ -72,13 +72,6 @@ const HomePage = () => {
               className="social-link"
               target="_black"
             >
-              <i className="bx bxl-linkedin-square icon"></i>coder8080
-            </a>
-            <a
-              href="https://github.com/coder8080"
-              className="social-link"
-              target="_black"
-            >
               <i className="bx bxl-github icon"></i>coder8080
             </a>
             <a
@@ -265,29 +258,6 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-
-        {/* <section className="section references" id="references">
-          <h2 className="section-title">References</h2>
-          <div className="references-container grid">
-            <div className="content grid">
-              <span className="subtitle">Product Accounts Officer</span>
-              <h3 className="title">Ignacio Rath</h3>
-              <ul className="contact">
-                <li>Phone: 213.262.1648</li>
-                <li>Email: Stuart_Krajcik@gmail.com</li>
-              </ul>
-            </div>
-
-            <div className="content grid">
-              <span className="subtitle">Product Accounts Officer</span>
-              <h3 className="title">Ignacio Rath</h3>
-              <ul className="contact">
-                <li>Phone: 213.262.1648</li>
-                <li>Email: Stacey.Konopelski@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </section> */}
         <section className="section languages" id="languages">
           <h2 className="section-title">Languages</h2>
           <div className="content">
